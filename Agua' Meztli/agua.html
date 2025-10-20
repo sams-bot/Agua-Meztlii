@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agua Meztli | Helados, Aguas y Dulces de Aguamiel</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" type="image/png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* Encabezado */
+    header {
+      background: linear-gradient(135deg, #007b83, #00a89d);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      border-bottom-left-radius: 40% 10%;
+      border-bottom-right-radius: 40% 10%;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+    }
+
+    /* Menú */
+    nav {
+      text-align: center;
+      background: #e1f5f2;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #007b83;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #005c63;
+    }
+
+    /* Secciones */
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #007b83;
+      border-left: 6px solid #f2e0b6;
+      padding-left: 10px;
+      margin-top: 0;
+    }
+
+    /* Galería */
+    .imagenes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .imagenes img {
+      width: 260px;
+      border-radius: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .imagenes img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Formulario */
+    form {
+      margin-top: 1rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    button {
+      background: #007b83;
+      color: white;
+      padding: 10px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #005c63;
+    }
+
+    /* Pie */
+    footer {
+      background: #007b83;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #f2e0b6;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Banner de cookies */
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #007b83;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      display: none;
+    }
+
+    #cookie-banner button {
+      background: #f2e0b6;
+      color: #333;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌿 Agua Meztli</h1>
+  <p>Helados, aguas y dulces artesanales a base de aguamiel</p>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#productos">Productos</a>
+  <a href="#galeria">Galería</a>
+  <a href="#contacto">Contacto</a>
+  <a href="privacidad.html" target="_blank">Aviso de Privacidad</a>
+</nav>
+
+<section id="inicio">
+  <h2>Bienvenidos</h2>
+  <p><strong>Agua Meztli</strong> es un proyecto dedicado a rescatar los sabores tradicionales de México mediante el uso del aguamiel, una bebida ancestral del maguey. Elaboramos <strong>helados, aguas frescas y dulces artesanales</strong> con ingredientes naturales y respetando el medio ambiente.</p>
+</section>
+
+<section id="productos">
+  <h2>Nuestros Productos</h2>
+  <ul>
+    <li>🥭 Helado de aguamiel con mango</li>
+    <li>🍓 Agua fresca de aguamiel con fresa</li>
+    <li>🥭 Agua fresca de aguamiel con mango</li>
+    <li>🍯 Dulces artesanales de aguamiel</li>
+  </ul>
+</section>
+
+<section id="galeria">
+  <h2>Galería</h2>
+  <div class="imagenes">
+    <img src="img/bebida_mango.jpeg" alt="Helado de aguamiel">
+    <img src="img/helado_fresa.jpeg" alt="Agua fresca de aguamiel">
+    <img src="img/helado_mango.jpeg" alt="Dulces de aguamiel">
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contáctanos</h2>
+  <p>¿Quieres hacer un pedido o colaborar con nosotros? ¡Escríbenos!</p>
+  <form>
+    <label>Nombre:</label><input type="text" required>
+    <label>Correo electrónico:</label><input type="email" required>
+    <textarea placeholder="Escribe tu mensaje..." required></textarea>
+    <label>
+<input type="checkbox" required> He leído y acepto el <a href="privacidad.html" target="_blank">Aviso de Privacidad</a>.</label><br>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+<footer>
+  <p>© 2025 Agua Meztli | <a href="privacidad.html">Aviso de Privacidad</a></p>
+</footer>
+
+<!-- Banner de cookies -->
+<div id="cookie-banner">
+  Usamos cookies para mejorar tu experiencia. Al continuar, aceptas nuestro Aviso de Privacidad.
+  <button onclick="acceptCookies()">Aceptar</button>
+</div>
+
+<script>
+  // Mostrar banner de cookies solo si no se ha aceptado
+  if (!localStorage.getItem('cookiesAccepted')) {
+    document.getElementById('cookie-banner').style.display = 'block';
+  }
+
+  function acceptCookies() {
+    localStorage.setItem('cookiesAccepted', true);
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
